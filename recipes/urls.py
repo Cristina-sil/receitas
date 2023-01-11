@@ -1,7 +1,6 @@
 from django.urls import path
 
-from . import \
-    views  # como o arquivo está na mesma pasta, foi utilizado o ponto, ao invés de from recipes.view import home
+from . import views
 
 urlpatterns = [
     path('', views.home),  # HOME
