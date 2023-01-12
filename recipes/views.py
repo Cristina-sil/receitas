@@ -14,4 +14,6 @@ def home(request):
 def recipes(request, id):
     return render(request, 'recipes/pages/recipe-view.html', context={
         'recipe': make_recipe(),
+        # se for true, não mostra o botão de ver mais na pág. de detalhes
+        'is_detail_page': True,
     })
