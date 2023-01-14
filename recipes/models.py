@@ -4,6 +4,10 @@ from django.db import models
 
 class Category(models.Model):
     name = models.CharField(max_length=35)
+    # Pra apresentar o nome da categoria no django admin
+
+    def __str__(self):
+        return self.name
 
 
 class Recipe(models.Model):
