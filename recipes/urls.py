@@ -6,8 +6,8 @@ app_name = 'recipes'
 # recipes:recipe, ou recipes:home
 
 urlpatterns = [
-    path('', views.home, name='home'),  # HOME
-    path('recipes/<int:id>/', views.recipes,
-         name='recipe'),  # detail page
-
+    path('', views.home, name="home"),
+    path('recipes/category/<int:category_id>/',
+         views.category, name="category"),
+    path('recipes/<int:id>/', views.recipe, name="recipe"),
 ]
