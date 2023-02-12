@@ -1,6 +1,4 @@
 from django import forms
-
-'''Importação de um model já existente'''
 from django.contrib.auth.models import User
 
 
